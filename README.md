@@ -15,7 +15,12 @@ A lightweight Unity component that reproduces Quake-like light flickering using 
 ## Usage
 1. Attach the QuakeLikeLightFlicker component to a GameObject with a Light component (optional: Lens Flare)  
 2. Optionally assign a preset or use a custom pattern string  
-3. Tune Max Intensity and Step Interval to shape the effect  
+3. Tune Max Intensity and Step Interval to shape the effect
+
+## Render Pipeline Support
+This package is designed for **Unity URP and HDRP only**.
+Built-in Render Pipeline is **not officially supported**.
+It may work in Built-in RP, but requires manual modification of the shader/material setup by the user.
 
 ## Notes
 - Updates continuously during runtime  
