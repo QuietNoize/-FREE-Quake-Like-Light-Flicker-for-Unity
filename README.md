@@ -17,11 +17,17 @@ A lightweight Unity component that reproduces Quake-like light flickering using 
 2. Optionally assign a preset or use a custom pattern string  
 3. Tune Max Intensity and Step Interval to shape the effect
 
-## Render Pipeline Support
-- Supported: URP, HDRP  
-- Not officially supported: Built-in Render Pipeline
+## Render Pipeline Compatibility
+This asset is designed for **URP and HDRP**.
 
-Built-in Render Pipeline is not supported due to differences in lighting and rendering APIs. Supporting Built-in RP would require modifying the core implementation
+### Lens Flare Compatibility
+The flicker system uses Unity’s Lens Flare components, which behave differently across render pipelines:
+
+- Built-in Render Pipeline uses legacy `LensFlare`
+- URP/HDRP use `LensFlareComponentSRP`
+
+Because of these differences, Built-in Render Pipeline is not supported out of the box.
+To use it in Built-in RP, you must modify the implementation to replace SRP lens flare handling with legacy `LensFlare` logic.
 
 ## Notes
 - Updates continuously during runtime  
