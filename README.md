@@ -21,7 +21,7 @@ A lightweight Unity component that reproduces Quake-like light flickering using 
 - Supported: URP, HDRP  
 - Not officially supported: Built-in Render Pipeline
 
-The asset may function in Built-in RP, but requires manual adjustments to materials and lighting setup.
+Built-in Render Pipeline is not supported due to differences in lighting and rendering APIs. Supporting Built-in RP would require modifying the core implementation
 
 ## Notes
 - Updates continuously during runtime  
