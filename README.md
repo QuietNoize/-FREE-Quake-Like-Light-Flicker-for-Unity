@@ -18,9 +18,9 @@ A lightweight Unity component that reproduces Quake-like light flickering using 
 3. Tune Max Intensity and Step Interval to shape the effect
 
 ## Render Pipeline Support
-This package is designed for **Unity URP and HDRP only**.
-Built-in Render Pipeline is **not officially supported**.
-It may work in Built-in RP, but requires manual modification of the shader/material setup by the user.
+- Supported: URP, HDRP  
+- Not officially supported: Built-in Render Pipeline  
+The asset may function in Built-in RP, but requires manual adjustments to materials and lighting setup.
 
 ## Notes
 - Updates continuously during runtime  
