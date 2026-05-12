@@ -1,5 +1,5 @@
 # Quake-Like Light Flicker for Unity
-![]([FREE] Quake-Like Light Flicker/cover.png)
+![Cover]([FREE]%20Quake-Like%20Light%20Flicker/cover.png)
 
 A lightweight Unity component that reproduces Quake-like light flickering using classic string-based lightstyle patterns.
 
